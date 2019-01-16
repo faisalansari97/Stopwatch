@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0">
@@ -7,28 +8,27 @@
     <meta name="keywords" content="Stopwatch">
     <title>StopWatch</title>
     <link rel="stylesheet" href="assets/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Cairo|Cinzel|Exo+2|Staatliches|Teko" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Cairo|Cinzel|Exo+2|Staatliches|Teko" rel="stylesheet">
 </head>
+
 <body>
     <header>
-    <h1>STOPWATCH</h1>
+        <h1>STOPWATCH</h1>
     </header>
-    <section class="time-circle">
-        <div id="time-circle">
-            
+    <section class="time-rectangle">
+        <div id="time-rectangle">
+            <h2 id="timer">00:00:00:00</h2>
         </div>
     </section>
     <section class="Stopwatch-btns">
-        <button type="button" value="Start">Start</button>
-        <button type="button" value="Stop">Stop</button></br>
-        <button type="button" value="Lap">Lap</button>
-        <button type="button" value="Reset">Reset</button>
+        <button type="button" id="Start" onclick="start()">Start</button>
+        <button type="button" id="Stop" onclick="pause()">Pause</button>
+        <button type="button" id="Lap" onclick="noteLap()">Lap</button>
+        <button type="button" id="Reset" onclick="reset()">Reset</button>
     </section>
-    <aside class="time-logs">
-
-    </aside>
-    <aside class="lap-times">
-
-    </aside>
+    <section>
+        <div id="lap-times"></div>
+    </section>
+    <script src="js/demo.js"></script>
 </body>
 </html>

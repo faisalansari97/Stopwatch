@@ -7,15 +7,22 @@ body{
 h1{
     font-size: 70px;
     text-align: center;
-    margin:0px;
+    margin:0 auto;
 }
 
-#time-circle{
+#time-rectangle{
         height: 250px;
-        width: 250px;
+        width: 1250px;
         background-color: white;
-        border-radius: 50%;
         margin: 0 auto;
+}
+
+#timer{
+    font-family: Lato;
+    color: black;
+    text-align: center;
+    font-size: 180px;
+    margin: 0 auto;
 }
 
 .Stopwatch-btns{
@@ -32,4 +39,10 @@ h1{
     font-weight: bold;
     color: rgb(24, 24, 24);
     margin: 0px 20px 10px 20px;
+}
+
+#lap-times{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: white;
 }
