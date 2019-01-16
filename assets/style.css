@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+}
+
+h1{
+    font-size: 70px;
+    text-align: center;
+    margin:0px;
+}
+
+#time-circle{
+        height: 250px;
+        width: 250px;
+        background-color: white;
+        border-radius: 50%;
+        margin: 0 auto;
+}
+
+.Stopwatch-btns{
+    padding: 40px;
+    margin:0 auto;
+    text-align: center;
+}
+
+[type="button"]{
+    padding: 0.5%;
+    width: 150px;
+    font-size: 30px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    color: rgb(24, 24, 24);
+    margin: 0px 20px 10px 20px;
+}
