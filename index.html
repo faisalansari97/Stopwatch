@@ -17,17 +17,33 @@
     </header>
     <section class="time-rectangle">
         <div id="time-rectangle">
-            <h2 id="timer">00:00:00:00</h2>
+            <h2 id="timer">00:00:00.00</h2>
         </div>
     </section>
     <section class="Stopwatch-btns">
         <button type="button" id="Start" onclick="start()">Start</button>
-        <button type="button" id="Stop" onclick="pause()">Pause</button>
+        <button type="button" id="Stop" onclick="stop()">Stop</button>
         <button type="button" id="Lap" onclick="noteLap()">Lap</button>
         <button type="button" id="Reset" onclick="reset()">Reset</button>
+        <button type="button" id="Logs" onclick="logs()">Logs</button>
     </section>
     <section>
-        <div id="lap-times"></div>
+       <div id="lap-times"></div>
+       <div id="history" hidden>
+           <label id="title-logs">Last 10 Logs</label>
+           <table>
+                <tr>
+                    <th>Start Time</th>
+                    <th>Stop Time</th>
+                    <th>Difference</th>
+                </tr>
+                <tr>
+                        <td id="startTime"></td>
+                        <td id="stopTime"></td>
+                        <td id="diff"></td>
+                </tr>
+           </table>         
+       </div>
     </section>
     <script src="js/demo.js"></script>
 </body>

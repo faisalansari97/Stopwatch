@@ -44,5 +44,36 @@ h1{
 #lap-times{
     font-family: 'Courier New', Courier, monospace;
     font-size: 30px;
+    float: left;
     color: white;
 }
+
+#history{
+    float: right;
+    height: 400px;
+    width: 50%;
+    background-color: antiquewhite; 
+    border-style: 1px solid gray;  
+    text-align: center;
+    overflow: auto;
+}
+
+#title-logs{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+th{
+    color: black;
+    padding-left: 100px;
+}
+
+td{
+    color: black;
+    padding-left: 100px;
+    position: relative;
+}
+
+#history td{vertical-align: top;}
