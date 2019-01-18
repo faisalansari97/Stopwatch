@@ -76,4 +76,18 @@ td{
     position: relative;
 }
 
-#history td{vertical-align: top;}
+#startTime{
+    vertical-align: top;
+}
+
+#history td{
+    vertical-align: top;
+}
+
+#diff{
+    vertical-align: top;
+}
+
+#logs{
+    color:black;
+}
