@@ -135,7 +135,7 @@ function reset() {
 function noteLap() {
     if(isRunning){
         i++;
-        let output = "Lap " + i + " on : " + lap + difference;
+        let output = "Lap " + i + " on : " + lap;
         // console.log(lap);
         document.getElementById("timer").innerHTML = lap;
         document.getElementById("lap-times").innerHTML += output + "</br>";
@@ -190,13 +190,6 @@ function msToTime(duration) {
   }
 
  function getLocalStorageOnLoad(){
-
-     if(lap === null){
-      lap = lap;
-    }
-
-    var lap = localStorage.getItem("lap");
-    document.getElementById("timer").innerHTML = lap;
     var difference = localStorage.getItem("diff");
     document.getElementById("diff").innerHTML = difference;
     var startTime = localStorage.getItem("startTime");
